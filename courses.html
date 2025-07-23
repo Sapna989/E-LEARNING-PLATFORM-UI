@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #f0f4ff, #ffffff);
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #1976d2;
+      padding: 1.5rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    header h1 a {
+      color: white;
+      text-decoration: none;
+      font-size: 2rem;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: #bbdefb;
+    }
+
+    main {
+      flex: 1;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    main h2 {
+      font-size: 2.5rem;
+      color: #0d47a1;
+      margin-bottom: 2rem;
+    }
+
+    .course-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 0;
+      list-style: none;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .course-list li {
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 1.5rem;
+      font-size: 1.1rem;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .course-list li:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    @media (max-width: 600px) {
+      main h2 {
+        font-size: 2rem;
+      }
+
+      .course-list li {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">E-Learning Platform</a></h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="progress.html">Progress</a>
+      <a href="video.html">Video</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Available Courses</h2>
+    <ul class="course-list">
+      <li>HTML & CSS Basics</li>
+      <li>JavaScript Essentials</li>
+      <li>React for Beginners</li>
+      <li>Node.js Crash Course</li>
+      <li>Python Programming</li>
+      <li>Data Structures & Algorithms</li>
+      <li>Responsive Web Design</li>
+      <li>Full Stack Development</li>
+      <li>Git & GitHub Basics</li>
+      <li>UI/UX Design Fundamentals</li>
+      <li>Machine Learning Intro</li>
+      <li>Database Management with MySQL</li>
+    </ul>
+  </main>
+</body>
+</html>
